@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>GitHub Copilot</Author>
+  <Created>2026-05-01T00:00:00Z</Created>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>9000</WindowHeight>
+  <WindowWidth>14000</WindowWidth>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="Title">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" ss:Size="16" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#1F4E78" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="Note">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Interior ss:Color="#FFF2CC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="Section">
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Bold="1"/>
+   <Interior ss:Color="#D9EAF7" ss:Pattern="Solid"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="Header">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" ss:Bold="1"/>
+   <Interior ss:Color="#E2F0D9" ss:Pattern="Solid"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="Cell">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="Input">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Interior ss:Color="#FCE4D6" ss:Pattern="Solid"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Form">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="22" x:FullColumns="1" x:FullRows="1" ss:DefaultRowHeight="18">
+   <Column ss:AutoFitWidth="0" ss:Width="130"/>
+   <Column ss:AutoFitWidth="0" ss:Width="90"/>
+   <Column ss:AutoFitWidth="0" ss:Width="220"/>
+   <Column ss:AutoFitWidth="0" ss:Width="340"/>
+   <Row ss:Height="30">
+    <Cell ss:MergeAcross="3" ss:StyleID="Title"><Data ss:Type="String">Required Roles &amp; Privacy Level Form</Data></Cell>
+   </Row>
+   <Row ss:Height="42">
+    <Cell ss:MergeAcross="3" ss:StyleID="Note"><Data ss:Type="String">Instructions: Select TRUE for one required role. If Manager or Secretary is TRUE, all privacy levels are available. Otherwise, only Open (Default) is available. This file uses TRUE/FALSE selection cells instead of VBA.</Data></Cell>
+   </Row>
+   <Row/>
+   <Row>
+    <Cell ss:MergeAcross="3" ss:StyleID="Section"><Data ss:Type="String">Required Roles</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">Selected</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">Notes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">User Role*</Data></Cell>
+    <Cell ss:StyleID="Input"><Data ss:Type="Boolean">1</Data></Cell>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">Business User (Default)</Data></Cell>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">Default role</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="Input"><Data ss:Type="Boolean">0</Data></Cell>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">Manager</Data></Cell>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">When TRUE, all privacy levels are available</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="Input"><Data ss:Type="Boolean">0</Data></Cell>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">Secretary</Data></Cell>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">When TRUE, all privacy levels are available</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="Input"><Data ss:Type="Boolean">0</Data></Cell>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">Other Role (Specify)</Data></Cell>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">Only Open (Default) is available unless Manager/Secretary is selected</Data></Cell>
+   </Row>
+   <Row/>
+   <Row>
+    <Cell ss:MergeAcross="3" ss:StyleID="Section"><Data ss:Type="String">Privacy Level</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">Field</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">Selected</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">Availability Logic</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">Levels*</Data></Cell>
+    <Cell ss:StyleID="Input"><Data ss:Type="Boolean">0</Data></Cell>
+    <Cell ss:Formula="=IF(OR(R7C2=TRUE,R8C2=TRUE),&quot;Confidential&quot;,&quot;&quot;)" ss:StyleID="Cell"><Data ss:Type="String">Confidential</Data></Cell>
+    <Cell ss:Formula="=IF(OR(R7C2=TRUE,R8C2=TRUE),&quot;Available for Manager/Secretary&quot;,&quot;Hidden - select Manager or Secretary&quot;)" ss:StyleID="Cell"><Data ss:Type="String">Available for Manager/Secretary</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="Input"><Data ss:Type="Boolean">0</Data></Cell>
+    <Cell ss:Formula="=IF(OR(R7C2=TRUE,R8C2=TRUE),&quot;Secret&quot;,&quot;&quot;)" ss:StyleID="Cell"><Data ss:Type="String">Secret</Data></Cell>
+    <Cell ss:Formula="=IF(OR(R7C2=TRUE,R8C2=TRUE),&quot;Available for Manager/Secretary&quot;,&quot;Hidden - select Manager or Secretary&quot;)" ss:StyleID="Cell"><Data ss:Type="String">Available for Manager/Secretary</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="Input"><Data ss:Type="Boolean">0</Data></Cell>
+    <Cell ss:Formula="=IF(OR(R7C2=TRUE,R8C2=TRUE),&quot;Sensitive&quot;,&quot;&quot;)" ss:StyleID="Cell"><Data ss:Type="String">Sensitive</Data></Cell>
+    <Cell ss:Formula="=IF(OR(R7C2=TRUE,R8C2=TRUE),&quot;Available for Manager/Secretary&quot;,&quot;Hidden - select Manager or Secretary&quot;)" ss:StyleID="Cell"><Data ss:Type="String">Available for Manager/Secretary</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="Input"><Data ss:Type="Boolean">1</Data></Cell>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">Open (Default)</Data></Cell>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">Always available</Data></Cell>
+   </Row>
+   <Row/>
+   <Row>
+    <Cell ss:MergeAcross="3" ss:StyleID="Section"><Data ss:Type="String">Helper Logic</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Cell"><Data ss:Type="String">Show all privacy levels?</Data></Cell>
+    <Cell ss:Formula="=OR(R7C2=TRUE,R8C2=TRUE)" ss:StyleID="Input"><Data ss:Type="Boolean">0</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="Cell"><Data ss:Type="String">TRUE when Manager or Secretary is selected.</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>5</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
