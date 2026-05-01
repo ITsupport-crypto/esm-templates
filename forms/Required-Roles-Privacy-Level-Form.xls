@@ -1,0 +1,111 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:x="urn:schemas-microsoft-com:office:excel"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="ProgId" content="Excel.Sheet">
+<meta name="Generator" content="GitHub Copilot">
+<style>
+  body { font-family: Calibri, Arial, sans-serif; }
+  table { border-collapse: collapse; }
+  td, th { border: 1px solid #999; padding: 6px 10px; min-width: 140px; }
+  .title { background: #1F4E78; color: #ffffff; font-weight: bold; font-size: 14pt; text-align: center; }
+  .section { background: #D9EAF7; font-weight: bold; }
+  .header { background: #E2F0D9; font-weight: bold; }
+  .note { background: #FFF2CC; }
+  .input { background: #FCE4D6; text-align: center; }
+  .hiddenhelper { color: #ffffff; background: #ffffff; border-color: #ffffff; }
+</style>
+</head>
+<body>
+<table>
+  <tr>
+    <td colspan="4" class="title">Required Roles & Privacy Level Form</td>
+  </tr>
+  <tr>
+    <td colspan="4" class="note">Instructions: Select TRUE for one required role. If Manager or Secretary is TRUE, all privacy levels appear. Otherwise, only Open (Default) appears.</td>
+  </tr>
+  <tr><td colspan="4"></td></tr>
+
+  <tr class="section">
+    <td colspan="4">Required Roles</td>
+  </tr>
+  <tr class="header">
+    <td>Field</td>
+    <td>Selected</td>
+    <td>Description</td>
+    <td>Notes</td>
+  </tr>
+  <tr>
+    <td>User Role*</td>
+    <td class="input">TRUE</td>
+    <td>Business User (Default)</td>
+    <td>Default role</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="input">FALSE</td>
+    <td>Manager</td>
+    <td>When TRUE, all privacy levels are available</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="input">FALSE</td>
+    <td>Secretary</td>
+    <td>When TRUE, all privacy levels are available</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="input">FALSE</td>
+    <td>Other Role (Specify)</td>
+    <td>Only Open (Default) is available unless Manager/Secretary is selected</td>
+  </tr>
+
+  <tr><td colspan="4"></td></tr>
+
+  <tr class="section">
+    <td colspan="4">Privacy Level</td>
+  </tr>
+  <tr class="header">
+    <td>Field</td>
+    <td>Selected</td>
+    <td>Description</td>
+    <td>Availability Logic</td>
+  </tr>
+  <tr>
+    <td>Levels*</td>
+    <td class="input">FALSE</td>
+    <td x:fmla="=IF(OR(R[-5]C[-1]=TRUE,R[-4]C[-1]=TRUE),&quot;Confidential&quot;,&quot;&quot;)">Confidential</td>
+    <td x:fmla="=IF(OR(R[-5]C[-2]=TRUE,R[-4]C[-2]=TRUE),&quot;Available for Manager/Secretary&quot;,&quot;Hidden - select Manager or Secretary&quot;)">Available for Manager/Secretary</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="input">FALSE</td>
+    <td x:fmla="=IF(OR(R[-6]C[-1]=TRUE,R[-5]C[-1]=TRUE),&quot;Secret&quot;,&quot;&quot;)">Secret</td>
+    <td x:fmla="=IF(OR(R[-6]C[-2]=TRUE,R[-5]C[-2]=TRUE),&quot;Available for Manager/Secretary&quot;,&quot;Hidden - select Manager or Secretary&quot;)">Available for Manager/Secretary</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="input">FALSE</td>
+    <td x:fmla="=IF(OR(R[-7]C[-1]=TRUE,R[-6]C[-1]=TRUE),&quot;Sensitive&quot;,&quot;&quot;)">Sensitive</td>
+    <td x:fmla="=IF(OR(R[-7]C[-2]=TRUE,R[-6]C[-2]=TRUE),&quot;Available for Manager/Secretary&quot;,&quot;Hidden - select Manager or Secretary&quot;)">Available for Manager/Secretary</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="input">TRUE</td>
+    <td>Open (Default)</td>
+    <td>Always available</td>
+  </tr>
+
+  <tr><td colspan="4"></td></tr>
+  <tr class="section">
+    <td colspan="4">Helper Logic</td>
+  </tr>
+  <tr>
+    <td>Show all privacy levels?</td>
+    <td x:fmla="=OR(R[-12]C=TRUE,R[-11]C=TRUE)">FALSE</td>
+    <td colspan="2">TRUE when Manager or Secretary is selected.</td>
+  </tr>
+</table>
+</body>
+</html>
